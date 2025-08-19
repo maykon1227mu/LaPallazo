@@ -1,0 +1,86 @@
+
+
+.historia {
+    padding: 5em 25vw 0;
+    background-image: url("../assets/icones/imagem-historia.webp");
+    background-size: cover;
+    background-position: center;
+    font-family: var(--fonte-principal);
+    height: auto;
+}
+
+.historia_titulo {
+    font-weight: 700;
+    font-size: 34px;
+    padding-bottom: 0.5em;
+    cursor: default;
+}
+
+.historia_texto {
+    font-size: 19px;
+    text-align: center;
+}
+
+.container_historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    height: 50vh;
+}
+
+@media (min-width: 1024px) and (max-width: 1728px) {
+    .historia_titulo {
+        font-size: 50px;
+    }
+
+    .historia_texto {
+        font-size: 20px;
+    }
+
+    .historia {
+        padding: 5em 20vw;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+    .historia_titulo {
+        font-size: 36px;
+    }
+
+    .historia {
+        padding: 0;
+        height: 80vh;
+    }
+
+    .historia_texto {
+        font-size: 15px;
+    }
+
+    .container_historia {
+        height: 65vh;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1020px) {
+    .container_historia {
+        height: 90vh;
+        padding: 2em;
+    }
+    .historia {
+        padding: 0;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .historia_texto {
+        font-size: 14px;
+    }
+
+    .container_historia {
+        padding: 1em;
+        height: 70vh;
+    }
+}

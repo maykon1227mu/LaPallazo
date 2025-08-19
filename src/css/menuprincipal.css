@@ -1,0 +1,231 @@
+
+.menu { 
+    font-family: var(--fonte-principal);
+    padding: 2em 20vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .4s;
+}
+
+.nome_prato {
+    color: var(--cor-fonte);
+}
+
+.menu_titulo {
+    font-size: 34px;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+    transition: .4s;
+    cursor: default;
+}
+
+.menu_texto {
+    font-size: 22px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+.container  {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border-radius: 10px;
+
+}
+
+.tudo_conteiner_menu {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    transition: .4s;
+    flex-wrap: wrap;
+}
+
+.container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: ease-in-out .6s;
+
+    
+}
+
+.menu_prato,
+.menu_prato_tras {
+    position: absolute;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgb(48, 48, 48);
+    backface-visibility: hidden;
+
+}
+
+.menu_prato_tras {
+    background-color: rgb(71, 27, 27);
+    transform: rotateY(180deg);
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: default;
+}
+
+.menu_prato {
+    background: url(../assets/Menu3.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p1{
+    background: url("../assets/imagem-prato-macarrao.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+
+#p2{
+    background: url("../assets/imagem-macarrao-verde.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p3 {
+    background: url("../assets/imagem-macarrao-pene.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p4{
+    background: url("../assets/imagem-prato-carne.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p5{
+    background: url("../assets/imagem-macarrao.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p6{
+    background: url("../assets/imagem-lasanha.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p7{
+    background: url("../assets/imagem-pizza-de.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+#p8{
+    background: url("../assets/imagem-pizza-molho.avif");
+    background-position: center;
+    filter: brightness(0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+
+#btnLeiaMais {
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    cursor: pointer ;
+    box-shadow: 0 0 5px 0 black;
+}
+
+#vermais {
+    display: none;
+    margin-top: 20px;
+}
+
+.menu_titulo:hover {
+    transform: scale(1.05);
+}
+
+.maisTexto {
+    margin: 0 1em auto;
+}
+
+.div_botao_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .menu {
+        padding: 5em 12vw 6em;
+    }
+
+    .menu_titulo {
+        margin-top: 1.5em;
+        font-size: 50px;
+    }
+    .menu_texto {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .menu {
+        padding: 7em 10vw;
+    }
+
+    .menu_titulo {
+        font-size: 36px;
+    }
+
+    .menu_texto {
+        font-size: 18px;
+    }
+
+    .tudo_conteiner_menu {
+        gap: 1.5em;
+        margin-right: 0.5em;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1031px) {
+    .menu {
+        padding: 2em 25vw;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .menu {
+        padding: 2em 20vw;
+    }
+}
+/* MODO ESCURO E CLARO */
+
+.menu.dark {
+    background-color: white;
+    color: black;
+}
+.maisTexto.dark{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./src/css/sec1.css">
+    <link rel="shortcut icon" type="imagex/png" href="./src/assets/icones/imagem-logo-secundaria.png">
+    <title>La Pallazo</title>
+</head>
+
+<body id="vamover">
+
+    <div class="preloader" id="preloader">
+        <div class="textos_pre">
+                <h1 id="h1pre"><span style="color: rgb(62, 184, 62);">La P</span><span class="mano" id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
+                <h1 id="h2pre">Restaurante Italiano <br>🍝</h1>
+            <div id="efeito-carregamento"></div>
+        </div>
+
+    </div>
+
+    <a id="btnstop" class="volta" href="#"><img src="./src/assets/icones/imagem-voltar-home.png" alt=""></a>
+    <!-- NAVBAR -->
+    <nav id="nav" class="navegacao">
+        <button onclick="menuVis()" id="botaaao" class="botao_hamburguer">
+            <div id="tachovendohamburguer3">
+                <span id="linhas" class="linha"></span>
+                <span id="linhas" class="linha"></span>
+                <span id="linhas" class="linha"></span>
+            </div>
+        </button>
+        <div class="logo">
+            <a href="#" class="logo-img"><img class="logo_nav" src="./src/assets/icones/imagem-logo-secundaria.png" alt=""></a>
+        </div>
+        <ul class="nav_site">
+            <li><a class="navegacao_link" href="#section_historia">História</a></li>
+            <li><a class="navegacao_link" href="#section_reserva">Reserva</a></li>
+            <li><a class="navegacao_link" href="./src/pages/cardápio/index.html">Cardápio</a></li>
+            <li><a class="navegacao_link" href="./registro.html">Registro</a></li>
+        </ul>
+            <div id="trilho" class="trilho">
+                <div class="indicador"></div>
+            </div>
+        <aside id="menuHamburguer" class="menu_hamburguer invisivel">
+            <ul id="listaH" class="lista_hamburguer">
+                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#">Home</a></li>
+                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#section_historia">História</a></li>
+                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="#section_reserva">Reserva</a></li>
+                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="./src/pages/cardápio/index.html">Cardápio</a></li>
+                <li class="lista_menu"><a onclick="menuVis()" class="link_hamburguer" href="./registro.html">Registro</a></li>
+            </ul>
+        </aside>
+    </nav>
+    <!-- PARTE PRINCIPAL DO SITE -->
+    <main id="sec1" class="sec1 ">
+        <div class="logos_sec1 hidden">
+            <img id="alface1" src="./src/assets/imagem-alface.png" style="animation: fade3 6s ease infinite; width: 400px;top: 300px; left: -120px; position: absolute;"  alt="">
+            <a style="color: white;" href="https://www.instagram.com/la_pallazo_" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a style="color: white;" href="https://wa.me/555511951565591?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <div class="centro_sec1 hidden">
+            <h1 class="lapallazo"> <span style="color: rgb(62, 184, 62);">La P</span><span class="mano" id="letrasec1branca" >all</span><span style="color: rgb(177, 51, 51);">azo</span></h1>
+            <img class="macarrao" src="./src/assets/imagem-macarrao-intro.png" alt="">
+        </div>
+        <div class="textos_sec1 hidden">
+            <img id="peperonne1" style="animation: fade2 6s ease infinite;width: 400px; display: flex; position: absolute; top: 80px; right: 20px; " src="./src/assets/imagem-pepperone-intro.png" alt="">
+            <h4>O CLÁSSICO</h4>
+            <p>O melhor restaurante de São Paulo, feito especialmente para você e sua família, lugar aconchegando e rechado de surpresas</p>
+            <div style="display: flex;
+            justify-content: end; gap: 10px;"><p style="color: rgb(177, 51, 51);">compartilhar</p> <i style="color: rgb(177, 51, 51);" class="bi bi-share-fill"></i></div>
+        </div>
+    </main>
+        <!-- SEÇÃO EXPLICANDO A HISTORIA DO RESTAURANTE -->
+        <section  id="section_menu" class="menu">
+            
+            <h2 class="menu_titulo hidden">Menu</h2>
+            <p class="menu_texto hidden">Pratos cuidadosamente elaborados por quem tem paixão em servir o melhor.
+                Qualidade nos ingredientes, para resultados incríveis.</p>
+            <div class="tudo_conteiner_menu hidden">
+            <div class="container ">
+                <div class="flip">
+                    <div id="p1" class="menu_prato"></div>
+
+                    <div id="inv" class="menu_prato_tras"> <h2 class="nome_prato">Espaguete com Molho</h2>
+                        <p style="color: rgb(212, 49, 49);">Carro chefe</p>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="flip">
+                        <div id="p2" class="menu_prato"></div>
+        
+                        <div class="menu_prato_tras"> <h2 class="nome_prato">Massa ao Molho Verde</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="flip">
+                        <div id="p3" class="menu_prato"></div>
+            
+                        <div class="menu_prato_tras"> 
+                            <h2 class="nome_prato">Macarrão Bucatini</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div  class="flip">
+                        <div id="p4" class="menu_prato"></div>
+                
+                        <div id="inv" class="menu_prato_tras"> <h2 class="nome_prato">Salame Defumado</h2></div>
+                    </div>
+                </div>
+            </div>
+            <span id="vermais" style="display: none;">
+            <div class="tudo_conteiner_menu">
+                <div class="container">
+                    <div class="flip">
+                        <div id="p5" class="menu_prato"></div>
+
+                        <div id="inv" class="menu_prato_tras"> <h2 class="nome_prato">Ravioli</h2></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="flip">
+                        <div id="p6" class="menu_prato"></div>
+            
+                        <div class="menu_prato_tras"> <h2 class="nome_prato">Lagsania</h2></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="flip">
+                        <div id="p7" class="menu_prato"></div>
+                
+                        <div class="menu_prato_tras"> <h2 class="nome_prato">Pizza Napolitana</h2></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="flip">
+                        <div id="p8" class="menu_prato"></div>
+                    
+                        <div id="inv" class="menu_prato_tras"> <h2 class="nome_prato">Pizza Napolitana Extra</h2></div>
+                    </div>
+                </div>
+            </div>
+                </span>
+                
+        </section>
+        <div class="div_botao_menu">
+            <button onclick="verMais()" id="btnLeiaMais" class="maisTexto">LEIA MAIS</button>
+        </div>
+        <!-- História -->
+        <section id="section_historia" class="historia ">
+            <div class="container_historia hidden">
+                <h2 class="historia_titulo">História</h2>
+                <p class="historia_texto">Em 2020, Giovanni, um imigrante italiano apaixonado pela culinária de sua terra natal, inaugurou o La Pallazo em São Paulo, trazendo consigo receitas familiares e tradições culinárias de gerações. Nos primeiros anos, o restaurante enfrentou desafios, mas conquistou os paladares dos paulistanos com suas massas frescas e molhos aromáticos.
+                    Com o passar do tempo, o La Pallazo se tornou um ponto de encontro para a comunidade italiana na cidade, celebrando festas e eventos tradicionais. Em meio à expansão do negócio, Giovanni trouxe sua família da Itália para ajudar na gestão, mantendo viva a autenticidade do local.</p>
+            </div>
+        </section>
+        <!-- SEÇÃO PARA A RESERVA -->
+        <section id="section_reserva" class="reserva">
+            <!-- FORMULARIO DA RESERVA -->
+            <form class="reserva_from hidden" method="post" action="mailto:nathan.silva163@etec.sp.gov.br" enctype="text/plain">
+                <div class="h2_reserva">
+                    <h2>Faça sua <span class="h2_diferente_reserva">reserva</span></h2>
+                </div>
+                <div class="divs_reserva"> 
+                    <label for="nome">Nome</label>
+                    <div class="input_reserva">
+                    </div>
+                    <div class="input_img_reserva">
+                        <i class="bi bi-person-fill"></i> 
+                        <input class="input" type="text" name="nome" id="nome" >
+                    </div>
+                </div>
+                <div class="divs_reserva">
+                    <label for="email">Email</label>
+                    <div class="input_reserva">
+                    </div>
+                    <div class="input_img_reserva">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input class="input" type="email" name="email" id="email"  required>
+                    </div>
+                </div>
+                <div class="divs_reserva">
+                    <label for="telefone">Telefone</label>
+                    <div class="input_reserva">
+                    </div>
+                    <div class="input_img_reserva">
+                        <i class="bi bi-telephone-fill"></i>
+                        <input class="input" type="number" name="telefone" id="telefone">
+                    </div>
+                </div>
+                <div class="botao_reserva">
+                    <button>Enviar</button>
+                </div>
+                
+            </form>
+
+        </section>
+<!-- FOOTER DO SITE -->
+    <footer>
+        <section id="local" class="local">
+            
+            <div id="localizacao" class="local_container">
+                <h3 class="local_titulo">LOCALIZAÇÃO</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3249097204507!2d-46.73036142388514!3d-23.520813660105276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1715442845203!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div class="box_footer">
+            <!-- Box redes sociais -->
+            <div class="ajuda">
+
+                <h3 class="titulo_footer">Contato</h3>
+                <ul id="listaFooter" class="textos_footer">
+                    <li class="link_footer"><a class="box_link" href="https://wa.me/5511951565591?text=Gostaria%20de%20ajuda%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank">Ajuda</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://wa.me/5511951565591?text=Gostaria%20de%20me%20afiliar%20ao%20restaurante%20La%20Pallazo" target="_blank">Afilie-se</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://www.abf.com.br/politica-de-privacidade/?gad_source=1&gclid=CjwKCAjwoJa2BhBPEiwA0l0ImIDXzbnomRih7tdGbmI4HshyA7kp8OWFLokXQKOH7axB3871Vf8CQBoCs7YQAvD_BwE" target="_blank">Política de Privacidade</a></li>
+                </ul>
+                
+            </div>
+            <!-- Div Loja -->
+            <div class="loja_online">
+                <h3 class="titulo_footer">Loja</h3>
+                <ul id="listaFooter" class="textos_footer">
+                    <li class="link_footer"><a class="box_link" href="#section_reserva" target="_blank">Reserva</a></li>
+                    <li class="link_footer"><a class="box_link" href="#localizacao" target="_blank">Local</a></li>
+                    <li class="link_footer"><a class="box_link" href="https://servircomrequinte.francobachot.com.br/legislacao-sanitaria-conheca-as-principais-regras-da-anvisa/" target="_blank">Regras</a></li>
+                </ul>
+            <!-- Div redes sociais -->
+            </div>
+            <div class="redes_sociais">
+                <h3 class="titulo_footer">Redes Sociais</h3>
+                <a class="social_ancora" href="https://www.instagram.com/la_pallazo_" target="_blank"><i id="social_insta" class="bi bi-instagram"></i></a>
+                <a class="social_ancora" href="https://www.facebook.com" target="_blank"><i id="social_face" class="bi bi-facebook"></i></a>
+                <a class="social_ancora" href="https://wa.me/555511951565591?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20restaurante%20La%20Pallazo" target="_blank"><i id="social_what" class="bi bi-whatsapp"></i></a>
+            </div>
+
+        </div>
+    
+    </footer>
+    </section>
+
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/botao_menu.js"></script>
+    <script src="./src/js/aparecer.js"></script>
+</body>
+</html>
